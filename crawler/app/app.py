@@ -4,7 +4,7 @@
 import json, requests 
 from slack import WebClient
 
-token = "너의 Slack API 토큰"
+token = "너의 토큰"
 channelName = "#web-based-services"
 
 def fetch(date):
