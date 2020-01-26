@@ -15,18 +15,18 @@ getting start crawling with python easy peasy
     -   headless.py
     -   html.py
 3. /crawler
-    -   django app structure
-    	- django app - fetch : fetch raw data
-	- django app - slack_api : send message to slack(token needed)
+	- django app structure
+    		- django app - fetch : fetch raw data
+		- django app - slack_api : send message to slack(token needed)
 
 #### API STRUCTURE
 ```mermaid
-graph LR;
-	mainApp-->fetchApp;
-	mainApp-->slackApiApp;
-	ssgfooding-->fetchApp;
-	ssgfooding-->slackApiApp;
-	slackBotApi-->slackApiApp;
+graph LR
+	mainApp --> fetchApp;
+	mainApp --> slackApiApp;
+	ssgfooding --> fetchApp;
+	ssgfooding --> slackApiApp;
+	slackBotApi --> slackApiApp;
 ```
 
 #### REQUIREMENTS
