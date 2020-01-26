@@ -19,9 +19,9 @@ getting start crawling with python easy peasy
     		- django app - fetch : fetch raw data
 		- django app - slack_api : send message to slack(token needed)
 
-#### API STRUCTURE
+#### API STRUCTURE(mermaid doesn't work in here)
 ```mermaid
-graph LR
+graph LR;
 	mainApp --> fetchApp;
 	mainApp --> slackApiApp;
 	ssgfooding --> fetchApp;
@@ -32,15 +32,15 @@ graph LR
 #### REQUIREMENTS
 ---
 
-3.6 <= Python 
+##### 3.6 <= Python 
 In console, type python --version  
 In case you already downloaded the python but cannot execute it  
 check out the environment variables  
   
-60 <= Chrome  
+##### 60 <= Chrome  
 you can check following link [my version](chrome://version/)  
   
-Chromedriver  
+##### Chromedriver  
   
 check out the version then download proper file in the link below   
 [download chromedriver](https://chromedriver.chromium.org/downloads)  
@@ -48,20 +48,19 @@ check out the version then download proper file in the link below
 Slack :: Account and API Access Token  
 [Slack API](https://api.slack.com/)  
   
-Your Apps - OAuth & Permissions::  
+##### Your Apps - OAuth & Permissions::  
   
 Configure the access permission of your app  
 Hit the create button, Copy your access key and paste into token, which is variable name, in slack/bot.py  
   
-Packages  
-  
--   slack/bot.py : pip install slack slackclient
-    -   API access token is necessary
--   crawler/headless.py : pip install selenium
-    -   Right version of chromedrive should be in this directory
--   crawler/html.py : pip install request BeautifulSoap4
+##### Packages  
+in your shell, type
 
-UPDATES
+```
+pip install -r requirements.txt 
+```
+
+#### UPDATES
 ---
 
 - API 호출 함수 이름 : fnRefreshMealTypeList()
@@ -69,7 +68,7 @@ UPDATES
 
 - 데이터 원형 : mealId=&mealTypeCd=&storeCd=05600&cafeCd=01&menuDate=2020-01-22
 
-데이터 as dict.
+#### 데이터 as dict.
 ---
 ```
 {
