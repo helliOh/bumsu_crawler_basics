@@ -21,6 +21,7 @@ getting start crawling with python easy peasy
 
 #### API STRUCTURE
 ```mermaid
+graph LR;
 	mainApp-->fetchApp;
 	mainApp-->slackApiApp;
 	ssgfooding-->fetchApp;
