@@ -21,7 +21,11 @@ getting start crawling with python easy peasy
 
 #### Django Structure
 
-Image will be upload in here
+![Application Domain Design](./source/crawler_design_app_domain.png)
+
+![Slack Domain Design](./source/crawler_design_slack_domain.png)
+
+Bumsu will design kakao application domain :blush:
 
 #### REQUIREMENTS
 ---
@@ -78,7 +82,7 @@ using the install command of package manager
 Q : PIP doesn't work well  
 A : First of all, check out the python version django has some dependency on it.  
 
-Q : PIP still doesn't work well :(
+Q : PIP still doesn't work well :sob:
 A : If you have multiple version of python without virtual environment, pip might not install  
 the package in the right version of python library. specify the version of it using manual command.  
 
