@@ -9,7 +9,6 @@ from slack import WebClient
 from .commands.handler import Command
 
 # list commands
-
 def eventHandler(eventType, data):
     if eventType == "app_mention":
         channel = data["event"]["channel"]

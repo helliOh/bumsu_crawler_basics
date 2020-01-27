@@ -6,8 +6,12 @@ import json
 from django.http import JsonResponse, HttpResponse
 from slack import WebClient
 
-token = "너의 봇 토큰"
-channelName = "#web-based-services"
+token = 'YOUR BOT TOKEN'
+channelName = 'YOUR DEFAULT CHANNEL'
+
+with open("config/env.json", "r") as st_json:
+    env = json.load(st_json)
+    token, channelName = env["SLACK_BOT_TOKEN"], env["SLACK_DEFAULT_CHANNEL"]
 
 def sendMessage(data):
     client = WebClient(token=token)

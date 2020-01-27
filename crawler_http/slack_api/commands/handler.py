@@ -7,8 +7,18 @@ from .menu import Menu
 from .greeting import Greeting
 
 def onFail(message):
-    token = "너의 봇 토큰""
-    channelName = "#web-based-services"
+    token = 'YOUR BOT TOKEN'
+    channelName = 'YOUR DEFAULT CHANNEL'
+
+    with open("config/env.json", "r") as st_json:
+        env = json.load(st_json)
+        print(env)
+        token, channelName = env["SLACK_BOT_TOKEN"], env["SLACK_DEFAULT_CHANNEL"]
+
+
+
+    print(token)
+    print(channelName)
     client = WebClient(token)
     client.chat_postMessage(channel=channelName, text=message)
 
